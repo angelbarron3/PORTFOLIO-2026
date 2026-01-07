@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uriel Esports | Angel Barrón</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Project Specific Styles */
+        .project-hero {
+            padding-top: 120px;
+            padding-bottom: 60px;
+            text-align: center;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--accent-color);
+        }
+
+        /* Gallery Grid */
+        .project-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            /* No space between images */
+            margin-top: 4rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 0;
+            /* Seamless connection */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.01);
+            z-index: 10;
+        }
+
+        /* Innovative Behance Button */
+        .behance-cta-container {
+            margin-top: 5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .behance-btn {
+            display: inline-block;
+            padding: 1.2rem 3rem;
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #000;
+            background: linear-gradient(135deg, #1769ff 0%, #00c6ff 100%);
+            /* Behance-ish blue gradient */
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(23, 105, 255, 0.4);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .behance-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: 0.5s;
+        }
+
+        .behance-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(23, 105, 255, 0.6);
+            color: #fff;
+        }
+
+        .behance-btn:hover::before {
+            left: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Loading Screen Removed -->
+
+    <!-- Custom Cursor -->
+    <div id="cursor-dot" class="cursor-dot"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo.png" alt="Angel Barrón" class="nav-logo">
+            </a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html#projects">Back to Work</a></li>
+            <li class="lang-switcher">
+                <button id="btn-en" class="lang-btn">EN</button>
+                <span class="divider">/</span>
+                <button id="btn-es" class="lang-btn">ES</button>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Project Detail Section -->
+    <section class="section project-hero">
+        <div class="container" style="max-width: 1200px;">
+            <a href="index.html#projects" class="back-link fade-in">
+                &larr; <span lang="en">Back to Projects</span><span lang="es" style="display:none">Volver a
+                    Proyectos</span>
+            </a>
+
+            <h1 class="section-title fade-up">URIEL ESPORTS</h1>
+            <p class="fade-up delay-1" style="font-size: 1.25rem; color: var(--accent-color); margin-bottom: 2rem;">
+                <span lang="en">Branding & Visual Identity</span>
+                <span lang="es" style="display:none">Branding e Identidad Visual</span>
+            </p>
+
+            <div class="project-content fade-up delay-2">
+                <!-- Extracted Gallery Images -->
+                <div class="project-gallery">
+                    <!-- Image 1 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/max_632_webp/2ba7ed177412023.64d58126c523e.jpg"
+                        alt="Uriel Esports Project Image 1" loading="lazy">
+                    <!-- Image 2 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/2821eb177412023.64d58126cbc8e.jpg"
+                        alt="Uriel Esports Project Image 2" loading="lazy">
+                    <!-- Image 3 (Logo on wall) -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/cdbd1e177412023.64d58126ca9c2.jpg"
+                        alt="Uriel Esports Project Image 3" loading="lazy">
+                    <!-- Image 4 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/bd0aa9177412023.64d58126cd324.jpg"
+                        alt="Uriel Esports Project Image 4" loading="lazy">
+                    <!-- Image 5 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/3bd824177412023.64d58126c9493.jpg"
+                        alt="Uriel Esports Project Image 5" loading="lazy">
+                    <!-- Image 6 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/c808d0177412023.64d58126c61b5.jpg"
+                        alt="Uriel Esports Project Image 6" loading="lazy">
+                    <!-- Image 7 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/e766fc177412023.64d58124e2e9c.jpg"
+                        alt="Uriel Esports Project Image 7" loading="lazy">
+                    <!-- Image 8 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/e084d2177412023.64d58124e3d37.jpg"
+                        alt="Uriel Esports Project Image 8" loading="lazy">
+                    <!-- Image 9 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/823fad177412023.64d58126cf7cb.jpg"
+                        alt="Uriel Esports Project Image 9" loading="lazy">
+                    <!-- Image 10 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6823d4177412023.64d5828b590b7.jpg"
+                        alt="Uriel Esports Project Image 10" loading="lazy">
+                    <!-- Image 11 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/4cb5d2177412023.64d5812615f9e.jpg"
+                        alt="Uriel Esports Project Image 11" loading="lazy">
+                    <!-- Image 12 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/6f12dc177412023.64d58126145f9.jpg"
+                        alt="Uriel Esports Project Image 12" loading="lazy">
+                    <!-- Image 13 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/61ecc6177412023.64d5812615221.jpg"
+                        alt="Uriel Esports Project Image 13" loading="lazy">
+                    <!-- Image 14 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0a74f4177412023.64d58126ce7ba.jpg"
+                        alt="Uriel Esports Project Image 14" loading="lazy">
+                    <!-- Image 15 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/633723177412023.64d58126c6f1f.jpg"
+                        alt="Uriel Esports Project Image 15" loading="lazy">
+                    <!-- Image 16 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/max_632_webp/5c560e177412023.64d58126c8195.jpg"
+                        alt="Uriel Esports Project Image 16" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Innovative Behance Link -->
+            <div class="behance-cta-container fade-up delay-3">
+                <a href="https://www.behance.net/gallery/177412023/Uriel-Esports-(2022)" target="_blank"
+                    class="behance-btn">
+                    <span lang="en">View it on Behance</span>
+                    <span lang="es" style="display:none">Ver en Behance</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Angel Barrón. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts (Reusing logic) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // --- LANGUAGE ---
+            const btnEn = document.getElementById('btn-en');
+            const btnEs = document.getElementById('btn-es');
+            let currentLang = localStorage.getItem('portfolio_lang') || 'en';
+
+            function setLanguage(lang) {
+                currentLang = lang;
+                localStorage.setItem('portfolio_lang', lang);
+                document.documentElement.lang = lang;
+
+                if (btnEn && btnEs) {
+                    btnEn.classList.toggle('active', lang === 'en');
+                    btnEs.classList.toggle('active', lang === 'es');
+                }
+
+                const enable = (sel) => {
+                    document.body.querySelectorAll(sel).forEach(el => {
+                        el.style.display = '';
+                        el.style.opacity = '1';
+                        el.classList.add('visible');
+                    });
+                };
+                const disable = (sel) => {
+                    document.body.querySelectorAll(sel).forEach(el => el.style.display = 'none');
+                };
+
+                if (lang === 'en') {
+                    enable('[lang="en"]');
+                    disable('[lang="es"]');
+                } else {
+                    enable('[lang="es"]');
+                    disable('[lang="en"]');
+                }
+            }
+
+            setLanguage(currentLang);
+            if (btnEn) btnEn.addEventListener('click', () => setLanguage('en'));
+            if (btnEs) btnEs.addEventListener('click', () => setLanguage('es'));
+
+            // --- LOADER ---
+            const loader = document.getElementById('loader');
+            function removeLoader() {
+                if (loader) {
+                    loader.style.opacity = '0';
+                    setTimeout(() => loader.style.display = 'none', 500);
+                }
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', removeLoader);
+            } else {
+                removeLoader();
+            }
+
+            // --- CURSOR ---
+            const cursor = document.getElementById('cursor-dot');
+            if (cursor && window.matchMedia("(hover: hover)").matches) {
+                document.body.style.cursor = 'none';
+                let mouseX = 0, mouseY = 0;
+                document.addEventListener('mousemove', (e) => {
+                    mouseX = e.clientX;
+                    mouseY = e.clientY;
+                });
+                function animateCursor() {
+                    cursor.style.left = mouseX + 'px';
+                    cursor.style.top = mouseY + 'px';
+                    requestAnimationFrame(animateCursor);
+                }
+                animateCursor();
+
+                document.querySelectorAll('a, button, img').forEach(el => {
+                    el.addEventListener('mouseenter', () => cursor.classList.add('active'));
+                    el.addEventListener('mouseleave', () => cursor.classList.remove('active'));
+                });
+            } else {
+                if (cursor) cursor.style.display = 'none';
+                document.body.style.cursor = 'auto';
+            }
+
+            // --- ANIMATIONS ---
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.fade-in, .fade-up').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+
+</html>

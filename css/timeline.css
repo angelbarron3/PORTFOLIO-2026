@@ -1,0 +1,182 @@
+/* --- TIMELINE (EXPERIENCE) --- */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    /* Mobile alignment */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--text-muted);
+    opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+    .timeline::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 11px;
+    /* Center on line (20px left + 1px border - 10px half width) */
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    border: 4px solid var(--bg-color);
+    box-shadow: 0 0 10px var(--accent-color);
+    z-index: 2;
+    animation: breathe 2s infinite ease-in-out;
+}
+
+@keyframes breathe {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px var(--accent-color);
+    }
+
+    50% {
+        transform: scale(1.3);
+        box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+    }
+}
+
+@media (min-width: 768px) {
+    .timeline-dot {
+        left: 50%;
+        /* We must combine the centering transform with the scale animation */
+        animation: breatheDesktop 2s infinite ease-in-out;
+    }
+}
+
+@keyframes breatheDesktop {
+
+    0%,
+    100% {
+        transform: translateX(-50%) scale(1);
+        box-shadow: 0 0 10px var(--accent-color);
+    }
+
+    50% {
+        transform: translateX(-50%) scale(1.3);
+        box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+    }
+}
+
+.timeline-content {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-left: 50px;
+    /* Space from line */
+    position: relative;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.timeline-content:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+}
+
+@media (min-width: 768px) {
+    .timeline-item:nth-child(odd) .timeline-content {
+        margin-left: auto;
+        margin-right: 50%;
+        transform: translateX(-40px);
+        text-align: right;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content {
+        margin-left: 50%;
+        transform: translateX(40px);
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content:hover {
+        transform: translateX(-40px) translateY(-5px);
+    }
+
+    .timeline-item:nth-child(even) .timeline-content:hover {
+        transform: translateX(40px) translateY(-5px);
+    }
+
+    /* Fix bullet alignment for right-aligned text */
+    .timeline-item:nth-child(odd) ul {
+        /* direction: rtl; REMOVED - Breaks punctuation */
+        text-align: right;
+    }
+
+    .timeline-item:nth-child(odd) ul li {
+        padding-right: 15px;
+        padding-left: 0;
+    }
+
+    .timeline-item:nth-child(odd) ul li::before {
+        right: 0;
+        left: auto;
+    }
+}
+
+.timeline-date {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+    display: block;
+    font-weight: 700;
+}
+
+.timeline-role {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.timeline-company {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.timeline-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-list li {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 15px;
+    line-height: 1.5;
+}
+
+.timeline-list li::before {
+    content: '•';
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+}

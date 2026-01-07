@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- [EDIT] Change the title of your portfolio here -->
+    <title>Angel Barrón | Creative Designer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Screen Removed -->
+
+    <div id="cursor-dot" class="cursor-dot"></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <!-- [EDIT] Put your Initials or Logo text here -->
+            <a href="#hero" class="logo-link">
+                <img src="assets/logo.png" alt="Angel Barrón" class="nav-logo">
+            </a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <!-- [EDIT] Navigation links (EN/ES) -->
+            <li>
+                <a href="#about">
+                    <span lang="en">About</span>
+                    <span lang="es" style="display:none">Sobre Mí</span>
+                </a>
+            </li>
+            <li>
+                <a href="#skills">
+                    <span lang="en">Skills</span>
+                    <span lang="es" style="display:none">Habilidades</span>
+                </a>
+            </li>
+            <li>
+                <a href="#projects">
+                    <span lang="en">Work</span>
+                    <span lang="es" style="display:none">Proyectos</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <span lang="en">Contact</span>
+                    <span lang="es" style="display:none">Contacto</span>
+                </a>
+            </li>
+            <!-- Language Switcher -->
+            <!-- Language Switcher -->
+            <li class="lang-switcher">
+                <button id="btn-en" class="lang-btn">EN</button>
+                <span class="divider">/</span>
+                <button id="btn-es" class="lang-btn">ES</button>
+            </li>
+        </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-content">
+            <!-- [EDIT] EDIT NAME HERE -->
+            <!-- [EDIT] Change your main headline/role below -->
+            <h1 class="fade-in">Angel Barrón</h1>
+            <h2 class="fade-in delay-1" lang="en">Digital Graphic Designer</h2>
+            <h2 class="fade-in delay-1" lang="es" style="display:none">Diseñador Gráfico Digital</h2>
+            <!-- [EDIT] Brief intro sentence -->
+            <p class="fade-in delay-2" lang="en">Creating strategic visual content for digital campaigns, brands, and
+                social media. Connecting art with technology.</p>
+            <p class="fade-in delay-2" lang="es" style="display:none">Creando contenido visual estratégico para campañas
+                digitales, marcas y redes sociales. Conectando arte y tecnología.</p>
+            <!-- [EDIT] CTA Button text -->
+            <a href="#projects" class="btn primary-btn fade-in delay-3">
+                <span lang="en">View Experience</span>
+                <span lang="es" style="display:none">Ver Experiencia</span>
+            </a>
+        </div>
+        <div class="hero-visual fade-in delay-2">
+            <div class="hero-image-wrapper">
+                <img src="assets/hero_new.png" alt="Angel Barrón" class="hero-img">
+                <div class="hero-glow"></div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h3 class="section-title fade-up">
+                <span lang="en">About Me</span>
+                <span lang="es" style="display:none">Sobre Mí</span>
+            </h3>
+            <div class="about-grid">
+                <div class="about-text fade-up">
+                    <!-- [EDIT] EDIT ABOUT TEXT HERE -->
+                    <div lang="en">
+                        <p class="highlight">Passionate about creating strategic visual content focused on digital
+                            campaigns, social media, and editorial design.</p>
+                        <p>
+                            With a strong background in agencies like <strong>Netabet MX</strong> and <strong>Animal
+                                Digital</strong>, I specialize in multichannel marketing, brand activations, and
+                            audiovisual production. I am committed to delivering creative solutions that truly connect
+                            with audiences through design, art, and technology.
+                        </p>
+                        <ul class="experience-list-mini">
+                            <li>2025: Netabet MX</li>
+                            <li>2024: Animal Digital</li>
+                            <li>2023: OFEC (Intern)</li>
+                            <li>2022: Freelance</li>
+                        </ul>
+                    </div>
+                    <div lang="es" style="display:none">
+                        <p class="highlight">Apasionado por crear contenido visual estratégico enfocado en campañas
+                            digitales, redes sociales y diseño editorial.</p>
+                        <p>
+                            Con sólida experiencia en agencias como <strong>Netabet MX</strong> y <strong>Animal
+                                Digital</strong>, me especializo en marketing multicanal, activaciones de marca y
+                            producción audiovisual. Estoy comprometido con soluciones creativas que conectan con las
+                            audiencias a través del diseño, el arte y la tecnología.
+                        </p>
+                        <ul class="experience-list-mini">
+                            <li>2025: Netabet MX</li>
+                            <li>2024: Animal Digital</li>
+                            <li>2023: OFEC (Prácticas)</li>
+                            <li>2022: Freelance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-stats fade-up delay-1">
+                    <!-- [EDIT] Key brief stats or focus areas -->
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years Exp.</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Passion</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Experience Section (New) -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h3 class="section-title fade-up">
+                <span lang="en">Experience</span>
+                <span lang="es" style="display:none">Experiencia</span>
+            </h3>
+            <div class="timeline">
+                <!-- Freelance -->
+                <div class="timeline-item fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022–Present</span>
+                        <h4 class="timeline-role">Freelancer</h4>
+                        <span class="timeline-company" lang="en">Independent</span>
+                        <span class="timeline-company" lang="es" style="display:none">Independiente</span>
+                        <div lang="en">
+                            <ul class="timeline-list">
+                                <li>Creation of visual identity for emerging brands.</li>
+                                <li>Editorial design, web design, and audiovisual content production.</li>
+                                <li>Advising clients on visual strategy and social media presence.</li>
+                            </ul>
+                        </div>
+                        <div lang="es" style="display:none">
+                            <ul class="timeline-list">
+                                <li>Creación de identidad visual para marcas emergentes.</li>
+                                <li>Diseño editorial, diseño web y producción de contenido audiovisual.</li>
+                                <li>Asesoramiento a clientes sobre estrategia visual y presencia en redes sociales.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Netabet MX -->
+                <div class="timeline-item fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025</span>
+                        <h4 class="timeline-role">Graphic Designer</h4>
+                        <span class="timeline-company">Netabet MX</span>
+                        <div lang="en">
+                            <ul class="timeline-list">
+                                <li>Development of visual concepts for digital and traditional advertising campaigns.
+                                </li>
+                                <li>Planning and design of social media content calendars.</li>
+                                <li>Multichannel digital marketing campaigns.</li>
+                                <li>Creation and editing of audiovisual material.</li>
+                                <li>Design of graphic materials for points of sale.</li>
+                                <li>Design of brand activations and promotions.</li>
+                            </ul>
+                        </div>
+                        <div lang="es" style="display:none">
+                            <ul class="timeline-list">
+                                <li>Desarrollo de conceptos visuales para campañas publicitarias digitales y
+                                    tradicionales.</li>
+                                <li>Planificación y diseño de calendarios de contenido para redes sociales.</li>
+                                <li>Campañas de marketing digital multicanal.</li>
+                                <li>Creación y edición de material audiovisual.</li>
+                                <li>Diseño de materiales gráficos para puntos de venta.</li>
+                                <li>Diseño de activaciones de marca y promociones.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Animal Digital -->
+                <div class="timeline-item fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024–2025</span>
+                        <h4 class="timeline-role">Graphic Designer</h4>
+                        <span class="timeline-company">Animal Digital Agency</span>
+                        <div lang="en">
+                            <ul class="timeline-list">
+                                <li>Development of visual concepts for digital advertising campaigns.</li>
+                                <li>Planning and design of social media content calendars.</li>
+                                <li>Support in the management of multichannel digital marketing campaigns.</li>
+                                <li>Support in the editorial area for the creation and design of interactive magazines.
+                                </li>
+                            </ul>
+                        </div>
+                        <div lang="es" style="display:none">
+                            <ul class="timeline-list">
+                                <li>Desarrollo de conceptos visuales para campañas publicitarias digitales.</li>
+                                <li>Planificación y diseño de calendarios de contenido para redes sociales.</li>
+                                <li>Apoyo en la gestión de campañas de marketing digital multicanal.</li>
+                                <li>Apoyo en el área editorial para la creación y diseño de revistas interactivas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- OFEC -->
+                <div class="timeline-item fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023</span>
+                        <h4 class="timeline-role" lang="en">Graphic Design Intern</h4>
+                        <h4 class="timeline-role" lang="es" style="display:none">Becario de Diseño Gráfico</h4>
+                        <span class="timeline-company">OFEC</span>
+                        <div lang="en">
+                            <ul class="timeline-list">
+                                <li>Support in graphic design for institutional communication campaigns.</li>
+                                <li>Participation in community projects focused on visual awareness.</li>
+                            </ul>
+                        </div>
+                        <div lang="es" style="display:none">
+                            <ul class="timeline-list">
+                                <li>Apoyo en diseño gráfico para campañas de comunicación institucional.</li>
+                                <li>Participación en proyectos comunitarios enfocados en concientización visual.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="section alt-bg">
+        <div class="container">
+            <h3 class="section-title fade-up">
+                <span lang="en">Selected Skills</span>
+                <span lang="es" style="display:none">Habilidades</span>
+            </h3>
+            <!-- [EDIT] Add or remove skills -->
+            <div class="skills-grid">
+                <!-- Software -->
+                <div class="skill-card fade-up">
+                    <div lang="en">
+                        <h4>Software</h4>
+                        <p style="font-size: 0.95rem; line-height: 1.6;">Office Suite, Photoshop, After Effects,
+                            InDesign, Illustrator, CorelDRAW, CapCut, Affinity, Filmora</p>
+                    </div>
+                    <div lang="es" style="display:none">
+                        <h4>Software</h4>
+                        <p style="font-size: 0.95rem; line-height: 1.6;">Office Suite, Photoshop, After Effects,
+                            InDesign, Illustrator, CorelDRAW, CapCut, Affinity, Filmora</p>
+                    </div>
+                </div>
+                <!-- Skills -->
+                <div class="skill-card fade-up delay-1">
+                    <div lang="en">
+                        <h4>Skills</h4>
+                        <p>Leadership, Content Planning, Social Media Management, Marketing Campaigns, Copywriting</p>
+                    </div>
+                    <div lang="es" style="display:none">
+                        <h4>Habilidades</h4>
+                        <p>Liderazgo, Planeación de Contenido, Gestión de Redes Sociales, Campañas de Marketing,
+                            Redacción</p>
+                    </div>
+                </div>
+                <!-- Creative Abilities -->
+                <div class="skill-card fade-up delay-2">
+                    <div lang="en">
+                        <h4>Creative Abilities</h4>
+                        <p>Graphic Design, Editorial Design, Writing, Sports Design, Logo Creation, BTL Creative, Brand
+                            Brief Development, Interactive Design, Audiovisual Production, Video Editing</p>
+                    </div>
+                    <div lang="es" style="display:none">
+                        <h4>Aptitudes Creativas</h4>
+                        <p>Diseño Gráfico, Diseño Editorial, Redacción, Diseño Deportivo, Creación de Logos, Creatividad
+                            BTL, Desarrollo de Briefs, Diseño Interactivo, Producción Audiovisual, Edición de Video</p>
+                    </div>
+                </div>
+
+                <!-- Ad Tech -->
+                <div class="skill-card fade-up delay-2">
+                    <div lang="en">
+                        <h4>Ad Tech & Platforms</h4>
+                        <p>TrafficJunky (High-Performance Ads), Meta Ads, Google Ads Strategy</p>
+                    </div>
+                    <div lang="es" style="display:none">
+                        <h4>Tecnología Publicitaria</h4>
+                        <p>TrafficJunky (Anuncios de Alto Rendimiento), Meta Ads, Estrategia en Google Ads</p>
+                    </div>
+                </div>
+                <!-- Languages -->
+                <div class="skill-card fade-up delay-3">
+                    <div lang="en">
+                        <h4>Languages</h4>
+                        <p>Spanish (Native)<br>English (B1 — Intermediate)</p>
+                    </div>
+                    <div lang="es" style="display:none">
+                        <h4>Idiomas</h4>
+                        <p>Español (Nativo)<br>Inglés (B1 — Intermedio)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h3 class="section-title fade-up">
+                <span lang="en">Featured Work</span>
+                <span lang="es" style="display:none">Trabajos Destacados</span>
+            </h3>
+            <!-- [EDIT] ADD OR EDIT PROJECTS HERE -->
+            <!-- Copy and paste a 'project-card' block to add more projects -->
+            <div class="projects-grid">
+                <!-- Project 1: Uriel Esports -->
+                <div class="project-card fade-up">
+                    <a href="uriel-esports.html" style="text-decoration: none; color: inherit; display: block;">
+                        <!-- Updated Image -->
+                        <div class="project-image" style="background-image: url('assets/uriel_esports.jpg');">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">
+                                <span lang="en">Branding</span>
+                                <span lang="es" style="display:none">Creación de marca</span>
+                            </span>
+                            <h4>
+                                <span>URIEL ESPORTS</span>
+                            </h4>
+                            <p>
+                                <span lang="en">Visual identity development for a competitive esports team, focusing on
+                                    aggressive and modern aesthetics.</span>
+                                <span lang="es" style="display:none">Desarrollo de identidad visual para equipo
+                                    competitivo de esports, enfocado en estética moderna y agresiva.</span>
+                            </p>
+                            <!-- Link is now wrapping the card, but keeping button for clarity -->
+                            <span class="project-link">
+                                <span lang="en">View Project &rarr;</span>
+                                <span lang="es" style="display:none">Ver Proyecto &rarr;</span>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Project 2: Anyle Repostería -->
+                <div class="project-card fade-up delay-1">
+                    <a href="anyle-reposteria.html" style="text-decoration: none; color: inherit; display: block;">
+                        <div class="project-image"
+                            style="background-image: url('assets/anyle_main.png'); background-position: center top;">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">
+                                <span lang="en">Rebranding</span>
+                                <span lang="es" style="display:none">Rebranding</span>
+                            </span>
+                            <h4>
+                                <span>Anyle Repostería y Moños</span>
+                            </h4>
+                            <p>
+                                <span lang="en">A sweet and feminine visual identity for a shop combining handcrafted
+                                    pastries and personalized bows.</span>
+                                <span lang="es" style="display:none">Una identidad visual dulce y femenina para una
+                                    tienda que combina repostería artesanal y moños personalizados.</span>
+                            </p>
+                            <span class="project-link">
+                                <span lang="en">View Project &rarr;</span>
+                                <span lang="es" style="display:none">Ver Proyecto &rarr;</span>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card fade-up delay-2">
+                    <div class="project-image"
+                        style="background-image: url('https://via.placeholder.com/600x400/222/fff?text=AI+Vision');">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">
+                            <span lang="en">AI & Art</span>
+                            <span lang="es" style="display:none">IA y Arte</span>
+                        </span>
+                        <h4>
+                            <span lang="en">AI Vision</span>
+                            <span lang="es" style="display:none">Visión IA</span>
+                        </h4>
+                        <p>
+                            <span lang="en">Exploration of generative art and its application in digital media.</span>
+                            <span lang="es" style="display:none">Exploración del arte generativo y su aplicación en
+                                medios digitales.</span>
+                        </p>
+                        <a href="#" class="project-link">
+                            <span lang="en">View Gallery &rarr;</span>
+                            <span lang="es" style="display:none">Ver Galería &rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Behance CTA -->
+            <div class="behance-cta-container fade-up delay-3">
+                <a href="https://www.behance.net/angelbarron6" target="_blank" class="behance-tech-btn">
+                    <span class="btn-content">
+                        <span lang="en">MORE PROJECTS ON BEHANCE</span>
+                        <span lang="es" style="display:none">MÁS PROYECTOS EN BEHANCE</span>
+                    </span>
+                    <span class="tech-decor"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h3 class="section-title fade-up">
+                <span lang="en">Let's Connect</span>
+                <span lang="es" style="display:none">Conectemos</span>
+            </h3>
+            <div class="contact-wrapper">
+                <p lang="en" class="fade-up">Have a project in mind or just want to say hi? Feel free to reach out.</p>
+                <p lang="es" style="display:none" class="fade-up">¿Tienes un proyecto en mente o solo quieres saludar?
+                    No dudes en
+                    contactarme.</p>
+                <!-- [EDIT] Change Email here -->
+                <a href="mailto:angelbarron604@gmail.com"
+                    class="contact-email fade-up delay-1">angelbarron604@gmail.com</a>
+                <!-- [EDIT] Social Links -->
+                <div class="social-links fade-up delay-2">
+                    <a href="https://www.linkedin.com/in/angelbarron6/" target="_blank">LinkedIn</a>
+                    <a href="https://www.behance.net/angelbarron6" target="_blank">Behance</a>
+                    <a href="https://www.instagram.com/angelbarron_6/" target="_blank">Instagram</a>
+                    <a href="https://wa.me/8444980145" target="_blank">WhatsApp</a>
+                </div>
+                <!-- Simple Contact Form -->
+                <form id="contact-form" class="contact-form fade-up delay-3">
+                    <input name="name" type="text" placeholder="Your Name" required>
+                    <input name="email" type="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- CV Section (New) -->
+    <section id="cv-section" class="section alt-bg">
+        <div class="container" style="text-align: center;">
+            <div class="cv-container fade-up">
+                <h4 style="margin-bottom: 2rem;">
+                    <span lang="en">Want to know more?</span>
+                    <span lang="es" style="display:none">¿Quieres saber más?</span>
+                </h4>
+                <!-- Innovative Link: Large, Interactive -->
+                <!-- Innovative Link: Large, Interactive -->
+                <a href="assets/CV.pdf?download=true" class="cv-download-link" id="cv-link"
+                    download="Angel_Manzanares_CV.pdf" target="_blank">
+                    <span class="cv-text" lang="en">Download Resume</span>
+                    <span class="cv-text" lang="es" style="display:none">Descargar CV</span>
+                    <span class="cv-icon">↓</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container fade-in">
+            <p>&copy; 2025 Angel Barrón. All Rights Reserved.</p>
+            <!-- Hidden Admin Link -->
+            <a href="/secret-admin" class="admin-hidden-link">π</a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
