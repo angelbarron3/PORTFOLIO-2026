@@ -244,7 +244,23 @@ const server = http.createServer((req, res) => {
     // Serve Static Files
     // [FIX] Strip query strings (e.g. ?v=1) to prevent 404s on static files
     const safeUrl = req.url.split('?')[0];
+
+    // [NEW] Force redirect .html -> clean URL
+    if (safeUrl.endsWith('.html') && safeUrl !== '/index.html') {
+        const cleanUrl = safeUrl.slice(0, -5);
+        res.writeHead(301, { 'Location': cleanUrl });
+        res.end();
+        return;
+    }
+
     let filePath = path.join(__dirname, safeUrl === '/' ? 'index.html' : safeUrl);
+
+    // Extensionless URL support
+    if (!path.extname(safeUrl) && safeUrl !== '/') {
+        if (fs.existsSync(filePath + '.html')) {
+            filePath += '.html';
+        }
+    }
 
     // Security: prevent directory traversal
     if (!filePath.startsWith(__dirname)) {

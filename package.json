@@ -1,0 +1,20 @@
+{
+    "name": "angel-barron-portfolio",
+    "version": "1.0.0",
+    "description": "Portfolio of Angel Barron - Creative Designer",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "keywords": [
+        "portfolio",
+        "design",
+        "web"
+    ],
+    "author": "Angel Barron",
+    "license": "ISC",
+    "dependencies": {},
+    "engines": {
+        "node": ">=14.0.0"
+    }
+}

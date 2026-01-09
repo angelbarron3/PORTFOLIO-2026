@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio 2026 | Angel Barrón</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Project Specific Styles */
+        .project-hero {
+            padding-top: 120px;
+            padding-bottom: 60px;
+            text-align: center;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--accent-color);
+        }
+
+        /* Gallery Grid */
+        .project-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            /* No space between images */
+            margin-top: 4rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 0;
+            /* Seamless connection */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.01);
+            z-index: 10;
+        }
+
+        /* Innovative Behance Button */
+        .behance-cta-container {
+            margin-top: 5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .behance-btn {
+            display: inline-block;
+            padding: 1.2rem 3rem;
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #000;
+            background: linear-gradient(135deg, #1769ff 0%, #00c6ff 100%);
+            /* Behance-ish blue gradient */
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(23, 105, 255, 0.4);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .behance-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: 0.5s;
+        }
+
+        .behance-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(23, 105, 255, 0.6);
+            color: #fff;
+        }
+
+        .behance-btn:hover::before {
+            left: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Loading Screen Removed -->
+
+    <!-- Custom Cursor -->
+    <div id="cursor-dot" class="cursor-dot"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index" class="logo-link">
+                <img src="assets/logo.png" alt="Angel Barrón" class="nav-logo">
+            </a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index#projects">Back to Work</a></li>
+            <li class="lang-switcher">
+                <button id="btn-en" class="lang-btn">EN</button>
+                <span class="divider">/</span>
+                <button id="btn-es" class="lang-btn">ES</button>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Project Detail Section -->
+    <section class="section project-hero">
+        <div class="container" style="max-width: 1200px;">
+            <a href="index#projects" class="back-link fade-in">
+                &larr; <span lang="en">Back to Projects</span><span lang="es" style="display:none">Volver a
+                    Proyectos</span>
+            </a>
+
+            <h1 class="section-title fade-up">PORTFOLIO 2026</h1>
+            <p class="fade-up delay-1" style="font-size: 1.25rem; color: var(--accent-color); margin-bottom: 2rem;">
+                <span lang="en">Identity & Showcase</span>
+                <span lang="es" style="display:none">Identidad y Muestra</span>
+            </p>
+
+            <div class="project-content fade-up delay-2">
+                <!-- Extracted Gallery Images -->
+                <div class="project-gallery">
+                    <!-- Image 1 (Cover) -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/fcb5f7241688623.695db5a277d51.png"
+                        alt="Portfolio 2026 Image 1" loading="lazy">
+                    <!-- Image 2 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/5f911f241688623.695db6ac106fb.png"
+                        alt="Portfolio 2026 Image 2" loading="lazy">
+                    <!-- Image 3 (Logo on wall) -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/fd89fc241688623.695db6ac0f5a9.png"
+                        alt="Portfolio 2026 Image 3" loading="lazy">
+                    <!-- GIF 1 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/source/8016fb241688623.695eef51e5cbe.gif"
+                        alt="Portfolio 2026 GIF 1" loading="lazy">
+                    <!-- Image 4 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/5e9af9241688623.695db6ac0ec70.png"
+                        alt="Portfolio 2026 Image 4" loading="lazy">
+                    <!-- GIF 2 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/source/4ef694241688623.695eef51e6ce7.gif"
+                        alt="Portfolio 2026 GIF 2" loading="lazy">
+                    <!-- Image 5 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/22c5a3241688623.695db6ac0f139.png"
+                        alt="Portfolio 2026 Image 5" loading="lazy">
+                    <!-- GIF 3 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/source/c13244241688623.695eef51e798f.gif"
+                        alt="Portfolio 2026 GIF 3" loading="lazy">
+                    <!-- Image 6 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/max_632_webp/441e5e241688623.695eef51e4fe9.png"
+                        alt="Portfolio 2026 Image 6" loading="lazy">
+
+                    <!-- Vimeo Video 1 -->
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                            src="https://player.vimeo.com/video/1152328672?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Video 1"></iframe>
+                    </div>
+
+                    <!-- Vimeo Video 2 -->
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                            src="https://player.vimeo.com/video/1152328620?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Video 2"></iframe>
+                    </div>
+
+                    <!-- GIF 4 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/source/6fde1e241688623.695eef51e86ae.gif"
+                        alt="Portfolio 2026 GIF 4" loading="lazy">
+                    <!-- Image 7 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/30aea3241688623.695eef51e8051.png"
+                        alt="Portfolio 2026 Image 7" loading="lazy">
+                    <!-- GIF 5 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/source/276b47241688623.695eef51e64b0.gif"
+                        alt="Portfolio 2026 GIF 5" loading="lazy">
+
+                    <!-- Vimeo Video 3 -->
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                            src="https://player.vimeo.com/video/1152328652?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Video 3"></iframe>
+                    </div>
+
+                    <!-- GIF 6 -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/source/8e8637241688623.695eef51e5629.gif"
+                        alt="Portfolio 2026 GIF 6" loading="lazy">
+
+                    <!-- Vimeo Video 4 -->
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                            src="https://player.vimeo.com/video/1152328636?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Video 4"></iframe>
+                    </div>
+
+                    <!-- Image 8 (Footer) -->
+                    <img class="gallery-img"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/e673e6241688623.695eef51e72e7.png"
+                        alt="Portfolio 2026 Image 8" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Innovative Behance Link -->
+            <div class="behance-cta-container fade-up delay-3">
+                <a href="https://www.behance.net/gallery/241688623/PORTFOLIO-2026" target="_blank" class="behance-btn">
+                    <span lang="en">View it on Behance</span>
+                    <span lang="es" style="display:none">Ver en Behance</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Angel Barrón. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts (Reusing logic) -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
